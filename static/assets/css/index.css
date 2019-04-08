@@ -1,0 +1,114 @@
+.main .post-list{
+	padding: 10px 30px;
+	margin-top: 20px;
+	background-color: #fff;
+	width: 100%;
+	border-bottom: 1px solid #eee;
+}
+.main .post-list:hover {
+	background-color: #f5f6f7;
+}
+.main .post-list h2 a{
+	font-size: 20px;
+	color: #3d3d3d;
+	font-weight: 700;
+	line-height: 36px;
+}
+.main .post-list:hover h2:hover a{
+	color: #ca0c16;
+}
+.main .post-list .content{
+	width: 100%;
+}
+.main .post-list .content a{
+	text-align: left;
+	width: 100%;
+	font-size: 14px;
+	font-family: 'Microsoft YaHei','SF Pro Display',Roboto,Noto,Arial,'PingFang SC',sans-serif;
+	color: #999;
+	letter-spacing:0.8px;
+	line-height: 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:3;
+}
+.main .post-list p{
+    margin-top: 10px;
+	display: inline-block;
+	color: #6b6b6b;
+}
+.main .post-list .print{	
+	margin: 0 10px;
+	font-size: 12px;
+}
+.main .post-list .read,.comments{
+	color: #3399ea;
+}
+.main .post_detail{
+	padding: 10px 30px;
+	margin-top: 20px;
+	background-color: #fff;
+	width: 100%;
+}
+.main .post_detail .post-detail-header {
+	border-bottom: 1px solid #ccc;
+}
+.main .post_detail .post-detail-header h2{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Microsoft YaHei','SF Pro Display',Roboto,Noto,Arial,'PingFang SC',sans-serif;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.main .post_detail .post-detail-header p{
+	margin-top: 10px;
+	display: inline-block;
+	color: #6b6b6b;
+	line-height: 28px;
+}
+.main .post_detail .post-detail-header .date{
+	margin-right: 30px;
+}
+.main .post_detail .post-detail-content p{
+    line-height: 28px;
+    text-indent: 2em;
+    font-size: 16px;
+    color: #4f4f4f;
+}
+.main .post-commets-list {
+	padding: 10px 30px;
+	margin-top: 20px;
+	background-color: #fff;
+	width: 100%;
+}
+.main .post-commets-list h4{
+	line-height: 30px;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 0 0 20px 0;
+}
+.main .post-commets-list .comments {
+	margin: 10px 0;
+	padding: 10px 0;
+    border-top: 1px  dashed #ccc;
+}
+.main .post-commets-list .comments p{
+	display: inline-block;
+	color: #3399ea;
+	line-height: 28px;
+}
+.main .post-commets-list .comments .date{
+	margin-right: 30px;
+}
+.main .post-commets-list .comments h5{
+	line-height: 26px;
+	font-size: 15px;
+	color: #999;
+	text-indent: 2em;
+}
+.main .post-comments{
+	padding: 10px 30px;
+	margin-top: 20px;
+	width: 100%;
+}

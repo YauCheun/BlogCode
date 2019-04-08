@@ -1,0 +1,98 @@
+body{
+	background-color: #eee;
+}
+ul {
+	list-style: none;
+}
+a, blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+.header{
+	padding: 30px;
+	height: 120px;
+	border-bottom: 1px solid #EEE;
+	background-color: #fff;
+}
+.header .container .row h2{
+	font-family: KaiTi;
+	margin: 0;
+	font-weight: 700;
+	/*text-align: center;*/
+}
+.header .container .row p{
+	font-family:"Microsoft YaHei";
+	font-size: 20px;
+	color: #999;
+	text-indent: 2em;
+}
+.header .container .row .input-group{
+	width: 220px;
+	padding-top: 10px;
+	float: right;
+	margin-top: 15px;
+}
+.main .category {
+	background-color: #fff;
+	width: 100%;
+	padding: 10px 0;
+	margin-top: 20px;
+}
+.main .category a {
+	font-size: 14px;
+	color: #333;
+}
+.main h3 {
+	font-weight: 700;
+	font-size: 15px;
+	border-left: 4px solid red;
+	margin: 10px auto;
+}
+.main .category a{
+	border: 0;
+}
+.main .post {
+	background-color: #fff;
+	width: 100%;
+	margin-top: 20px;
+	padding: 10px 0;
+}
+.main .post .list-group {
+	margin: 0px 0;
+}
+.main .post .list-group a{
+	border: 0;
+}
+.main .post .list-group a h4 {
+	font-size: 15px;
+	font-weight: 700;
+}
+.main .post .list-group a p {
+	font-size: 12px;
+}
+.main .post .list-group a p span {
+	color: #3399ea;
+}
+.main .category .badge{
+	background-color: #ff4f4f;
+	padding: 3px 3px;
+	font-size: 10px;
+}
+.main .other {
+	background-color: #fff;
+	width: 100%;
+	margin-top: 20px;
+	padding: 10px 0;
+}
+.main .other .list-group a{
+	border: 0;
+	color: #3399ea;
+	font-size: 14px;
+}
+.foot{
+	margin-top: 50px;
+	font-size: 12px;
+}

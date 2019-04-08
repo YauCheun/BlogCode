@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YauCheung的博客</title>
+  <link rel="stylesheet" href="/static/assets/vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/assets/css/index.css">
+  <link rel="stylesheet" href="/static/assets/css/base.css">
+  <link rel="stylesheet" href="/static/assets/vendors/nprogress/nprogress.css">
+  <script src="/static/assets/vendors/nprogress/nprogress.js"></script>
+</head>
+<body>
+  <!--  <script>NProgress.start()</script> -->
+  <div class="header">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-4 col-xs-12">
+           <a href="/index.html"><h2>YauCheung's Blog</h2>
+          <p>Thoughts, stories and ideas.</p></a>
+        </div>
+         <div class="col-md-4 col-md-offset-4 hidden-xs hidden-sm"> 
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="输入关键字搜索">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">搜索</button>
+            </span>
+          </div><!-- /input-group -->
+        </div>
+
+      </div>
+     </div>
+  </div>
+  <div class="main">
+    <div class="container">
+       <div class="row">
+          <div class="col-sm-3 col-xs-12">
+            <div class="category">
+              <h3>&nbsp;&nbsp;个人分类</h3>
+              <div class="list-group" id="category-list">
+               <!--  <a class="list-group-item">
+                  <span class="badge">14</span>
+                  Cras justo odio
+                </a>
+                  <a class="list-group-item">
+                  <span class="badge">14</span>
+                  Cras justo odio
+                </a>
+                  <a class="list-group-item">
+                  <span class="badge">14</span>
+                  Cras justo odio
+                </a> -->
+              </div>
+            </div>
+            <div class="post" >
+              <h3>&nbsp;&nbsp;热门文章</h3>
+              <div id="hot_posts">     
+             <!--    <div class="list-group">
+                  <a href="#" class="list-group-item ">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">.sdfs..</p>
+                  </a>
+                </div>
+                <div class="list-group">
+                  <a href="#" class="list-group-item ">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">.sdfs..</p>
+                  </a>
+                </div> -->
+              </div>
+            
+            </div>
+            <div class="other hidden-xs">
+              <h3>&nbsp;&nbsp;其他</h3>
+              <div class="list-group">
+                <a href="/admin/login.php" class="list-group-item ">
+                博客管理
+                </a>
+                <a href="https://weibo.com/u/6018878594" class="list-group-item">我的微博</a>
+                <a href="javascript:;" class="list-group-item">QQ邮箱：1272125039@qq.com</a>
+                <a href="https://www.cnblogs.com/Yaucheun/" class="list-group-item">我的博客园</a>
+              
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-9 col-xs-12" id="posts_detail">
+            <!-- <div class="post-list">
+                <h2><a href="">打飞机扣水电费就四大皆空复健科是否谁说的；社科类</a></h2>
+                <p class="content"><a href="">sdfasdfsdfdafsdfsdfsdfsdsdfgg大纲更大股东发的回答东风浩荡发货单大回电话大会双等号是是金粉世家法规及市房管局四方街房间风光给付对价梵蒂冈减肥的国家级fsd若干个风格傻大个的梵蒂冈东方红地方哈代发货但是非很反感的合法化然后让他和特惠人sfsdaf</a></p>
+                <p class="date">2019-3-21 10:55</p>
+                <p class="print">|</p>
+                <p >浏览数：<span class="read">22</span></p>
+                <p class="print">|</p>
+                <p>评论数：<span class="comments">22</span></p>
+            </div>
+            <div class="post-list">
+                <h2><a href="">士大夫士大夫水电费</a></h2>
+                <p class="content"><a href="">sdfasdfsdfdafsdfsdfsdfsdsdfgg大纲更大股东发的回答东风浩荡发货单大回电话大会双等号是是金粉世家法规及市房管局四方街房间风光给付对价梵蒂冈减肥的国家级fsd若干个风格傻大个的梵蒂冈东方红地方哈代发货但是非很反感的合法化然后让他和特惠人sfsdaf</a></p>
+                <p class="date">2019-3-21 10:55</p>
+                <p class="print">|</p>
+                <p >浏览数：<span class="read">22</span></p>
+                <p class="print">|</p>
+                <p>评论数：<span class="comments">22</span></p>
+            </div>
+            <div class="post-list">
+                <h2><a href="">萨芬撒是水电费</a></h2>
+                <p class="content"><a href="">sdfasdfsdfdafsdfsdfsdfsdsdfgg大纲更大股东发的回答东风浩荡发货单大回电话大会双等号是是金粉世家法规及市房管局四方街房间风光给付对价梵蒂冈减肥的国家级fsd若干个风格傻大个的梵蒂冈东方红地方哈代发货但是非很反感的合法化然后让他和特惠人sfsdaf</a></p>
+                <p class="date">2019-3-21 10:55</p>
+                <p class="print">|</p>
+                <p >浏览数：<span class="read">22</span></p>
+                <p class="print">|</p>
+                <p>评论数：<span class="comments">22</span></p>
+            </div>
+            <div class="post-list">
+                <h2><a href="">士大夫士大夫盛世嫡妃</a></h2>
+                <p class="content"><a href="">sdfasdfsdfdafsdfsdfsdfsdsdfgg大纲更大股东发的回答东风浩荡发货单大回电话大会双等号是是金粉世家法规及市房管局四方街房间风光给付对价梵蒂冈减肥的国家级fsd若干个风格傻大个的梵蒂冈东方红地方哈代发货但是非很反感的合法化然后让他和特惠人sfsdaf</a></p>
+                <p class="date">2019-3-21 10:55</p>
+                <p class="print">|</p>
+                <p >浏览数：<span class="read">22</span></p>
+                <p class="print">|</p>
+                <p>评论数：<span class="comments">22</span></p>
+            </div>
+             <div class="post-list">
+                <h2><a href="">士大夫士大夫水电费是</a></h2>
+                <p class="content"><a href="">sdfasdfsdfdafsdfsdfsdfsdsdfgg大纲更大股东发的回答东风浩荡发货单大回电话大会双等号是是金粉世家法规及市房管局四方街房间风光给付对价梵蒂冈减肥的国家级fsd若干个风格傻大个的梵蒂冈东方红地方哈代发货但是非很反感的合法化然后让他和特惠人sfsdaf</a></p>
+                <p class="date">2019-3-21 10:55</p>
+                <p class="print">|</p>
+                <p >浏览数：<span class="read">22</span></p>
+                <p class="print">|</p>
+                <p>评论数：<span class="comments">22</span></p>
+            </div>-->
+          </div> 
+
+       </div>
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="hidden-sm hidden-md hidden-lg col-xs-12">
+            <div class="other">
+              <h3>&nbsp;&nbsp;其他</h3>
+              <div class="list-group">
+                <a href="/admin/login.php" class="list-group-item ">
+                博客管理
+                </a>
+                <a href="https://weibo.com/u/6018878594" class="list-group-item">我的微博</a>
+                <a href="javascript:;" class="list-group-item">QQ邮箱：1272125039@qq.com</a>
+                <a href="https://www.cnblogs.com/Yaucheun/" class="list-group-item">我的博客园</a>
+              
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p style="text-align: center;">©2019 由 <span><a href="https://weibo.com/u/6018878594">YauCheung</a></span> 版权所有</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script id="category_tmpl" type="text/x-jsrender">
+    {{for commens}}
+       <a class="list-group-item" href="/article/category/category.html?id={{: id}}">
+                  <span class="badge">{{: count}}</span>
+                {{: name}}
+                </a>
+    {{/for}}
+  </script>
+  <script id="hot_posts_tmpl" type="text/x-jsrender">
+    {{for commens}}
+        <div class="list-group">
+                <a href="/article/detail/post-detail.html?id={{: id}}" class="list-group-item ">
+                  <h4 class="list-group-item-heading">{{: title}}</h4>
+                  <p class="list-group-item-text">阅读数：<span>{{: views}}</span></p>
+                </a>
+              </div>
+    {{/for}}
+  </script>
+  <script id="posts_detail_tmpl" type="text/x-jsrender">
+    {{for commens}}
+         <div class="post-list">
+                <h2><a href="/article/detail/post-detail.html?id={{: id}}">{{: title}}</a></h2>
+                <div class="content"><a href="/article/detail/post-detail.html?id={{: id}}">{{: content}}</a></div><br>
+                <p class="date">{{: created}}</p>
+                <p class="print">|</p>
+                <p >浏览数：<span class="read">{{: views}}</span></p>
+                <p class="print">|</p>
+                <p>评论数：<span class="comments">{{if count==null}} 0 {{else  count!=null}} {{: count}}{{/if}}</span></p>
+            </div>
+    {{/for}}
+  </script>
+  <script src="/static/assets/vendors/jquery/jquery.js"></script>
+    <script src="/static/assets/vendors/jsrender/jsrender.js"></script>
+  <script src="/static/assets/vendors/bootstrap/js/bootstrap.js"></script>
+  <script>
+    $(function($){
+     $(document).ajaxStart(function() {
+      NProgress.start();
+    }).ajaxStop(function() {
+      NProgress.done();
+    });
+      $.get('/admin/api/category.php', function(data) {
+        console.log(data);
+        var html=$('#category_tmpl').render({commens: data.category});
+        $('#category-list').html(html);
+          var html=$('#hot_posts_tmpl').render({commens: data.hot_post});
+        $('#hot_posts').html(html);
+         var html=$('#posts_detail_tmpl').render({commens: data.posts_detail});
+        $('#posts_detail').html(html);
+      });
+
+
+
+    })
+
+
+  </script>
+</body>
+</html>
