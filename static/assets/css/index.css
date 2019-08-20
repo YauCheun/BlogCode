@@ -1,65 +1,102 @@
 .main .post-list{
-	padding: 10px 30px;
+	padding: 10px 32px;
 	margin-top: 20px;
 	background-color: #fff;
 	width: 100%;
-	border-bottom: 1px solid #eee;
+	border: 1px solid #ededed;
+	box-sizing: border-box;
 }
-.main .post-list:hover {
+/*.main .post-list:hover {
 	background-color: #f5f6f7;
+}*/
+.main .post-list h2 {
+	text-align: center;
 }
 .main .post-list h2 a{
-	font-size: 20px;
-	color: #3d3d3d;
-	font-weight: 700;
-	line-height: 36px;
+	font-size: 30px;
+	color: #212121;
+	line-height: 50px;
+
 }
 .main .post-list:hover h2:hover a{
-	color: #ca0c16;
+	color:  #ffca7e;
 }
 .main .post-list .content{
 	width: 100%;
 }
-.main .post-list .content a{
+.main .post-list .content{
 	text-align: left;
 	width: 100%;
 	font-size: 14px;
-	font-family: 'Microsoft YaHei','SF Pro Display',Roboto,Noto,Arial,'PingFang SC',sans-serif;
+	word-wrap: break-word;
 	color: #999;
 	letter-spacing:0.8px;
 	line-height: 20px;
     overflow: hidden;
+     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient:vertical;
-    -webkit-line-clamp:3;
+    -webkit-line-clamp:2;
+}
+.main .post-list .flex{
+	text-align: center;
+}
+.main .post-list .flex p{
+	vertical-align:middle;
+	font-size: 16px;
+}
+.main .post-list .flex i{
+	font-family: 'icomoon';
+	color: #ffca7e;
+	font-size: 16px;
+	font-weight: normal;        /*不加粗*/
+    font-style: normal;        /* 不倾斜*/
+}
+.main .post-list .flex .after{
+	background-color: #ffca7e;
+	display: inline-block;
+	height: 2px;
+	width: 60px;
+	text-align: center;
 }
 .main .post-list p{
     margin-top: 10px;
 	display: inline-block;
-	color: #6b6b6b;
+	color: #424242;
+	font-size: 18px;
 }
 .main .post-list .print{	
 	margin: 0 10px;
 	font-size: 12px;
 }
 .main .post-list .read,.comments{
-	color: #3399ea;
+	color: #ffca7e;
 }
 .main .post_detail{
 	padding: 10px 30px;
 	margin-top: 20px;
 	background-color: #fff;
 	width: 100%;
+	border: 1px solid #ededed;
 }
 .main .post_detail .post-detail-header {
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #ededed;
+	 text-align: center;
+}
+.main .post_detail .post-detail-header i {
+	font-family: 'icomoon';
+	font-weight: normal;        /*不加粗*/
+   font-style: normal;        /* 不倾斜*/
+   color: #ffca7e;
+}
+.main .post_detail .post-detail-header .read{
+	color: #ffca7e;
 }
 .main .post_detail .post-detail-header h2{
     font-size: 28px;
-    font-weight: 700;
-    font-family: 'Microsoft YaHei','SF Pro Display',Roboto,Noto,Arial,'PingFang SC',sans-serif;
     line-height: 40px;
     letter-spacing: 1px;
+
 }
 .main .post_detail .post-detail-header p{
 	margin-top: 10px;
@@ -84,27 +121,30 @@
 }
 .main .post-commets-list h4{
 	line-height: 30px;
-	font-size: 18px;
-	font-weight: 700;
+	font-size: 24px;
+	color: #424242;
 	padding: 0 0 20px 0;
 }
 .main .post-commets-list .comments {
 	margin: 10px 0;
 	padding: 10px 0;
-    border-top: 1px  dashed #ccc;
+    border-top: 1px  dashed #ededed;
 }
 .main .post-commets-list .comments p{
 	display: inline-block;
-	color: #3399ea;
 	line-height: 28px;
+	color: #40586d;
 }
 .main .post-commets-list .comments .date{
 	margin-right: 30px;
 }
+.main .post-commets-list .comments .author{
+	color: #ffca7e;
+}
 .main .post-commets-list .comments h5{
 	line-height: 26px;
 	font-size: 15px;
-	color: #999;
+	color: #212121;
 	text-indent: 2em;
 }
 .main .post-comments{

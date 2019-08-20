@@ -5,75 +5,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>YauCheung的博客</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="/static/assets/vendors/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="/static/assets/css/index.css">
   <link rel="stylesheet" href="/static/assets/css/base.css">
     <link rel="stylesheet" href="/static/assets/vendors/nprogress/nprogress.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   <script src="/static/assets/vendors/nprogress/nprogress.js"></script>
 </head>
 <body>
-  <div class="header">
+   <div class="banner">
      <div class="container">
        <div class="row">
-         <div class="col-md-4 col-xs-12">
-          <a href="/index.html"><h2>YauCheung's Blog</h2>
-          <p>Thoughts, stories and ideas.</p></a>
-        </div>
-         <div class="col-md-4 col-md-offset-4 hidden-xs hidden-sm"> 
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="输入关键字搜索">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="button">搜索</button>
-            </span>
-          </div><!-- /input-group -->
-        </div>
-
+         <div class="col-xs-12">
+            <div class="banner-about">
+         <a href="/index.html"><h1>YUBLOG</h1>
+          <p>想法•故事•学习</p></a>
       </div>
+         </div>
+       </div>
      </div>
   </div>
   <div class="main">
     <div class="container">
        <div class="row">
-          <div class="col-sm-3 col-xs-12">
+          <div class="col-sm-3 col-xs-12 hidden-xs">
             <div class="category">
-              <h3>&nbsp;&nbsp;个人分类</h3>
+              <h3>&nbsp;&nbsp;分类标签</h3>
                <div class="list-group" id="category-list">
-              <!--   <a class="list-group-item">
-                  <span class="badge">14</span>
-                  Cras justo odio
-                </a>
-                  <a class="list-group-item">
-                  <span class="badge">14</span>
-                  Cras justo odio
-                </a>
-                  <a class="list-group-item">
-                  <span class="badge">14</span>
-                  Cras justo odio
-                </a> -->
               </div>
             </div>
             <div class="post">
               <h3>&nbsp;&nbsp;热门文章</h3>
                 <div id="hot_posts">  
                 </div>   
-              <!-- <div class="list-group">
-                <a href="#" class="list-group-item ">
-                  <h4 class="list-group-item-heading">List group item heafsdfsfsdfsdfsdfsdding</h4>
-                  <p class="list-group-item-text">阅读数: <span>22</span></p>
-                </a>
-              </div>
-              <div class="list-group">
-                <a href="#" class="list-group-item ">
-                  <h4 class="list-group-item-heading">List group item heading</h4>
-                  <p class="list-group-item-text">.sdfs..</p>
-                </a>
-              </div>
-              <div class="list-group">
-                <a href="#" class="list-group-item ">
-                  <h4 class="list-group-item-heading">List group item heading</h4>
-                  <p class="list-group-item-text">.sdfs..</p>
-                </a>
-              </div> -->
             </div>
             <div class="other hidden-xs">
               <h3>&nbsp;&nbsp;其他</h3>
@@ -83,42 +48,55 @@
                 </a>
                 <a href="https://weibo.com/u/6018878594" class="list-group-item">我的微博</a>
                 <a href="javascript:;" class="list-group-item">QQ邮箱：1272125039@qq.com</a>
-                <a href="https://www.cnblogs.com/Yaucheun/" class="list-group-item">我的博客园</a>
+                <a href="https://blog.csdn.net/YauCheun" class="list-group-item">我的CSDN</a>
               
+              </div>
+            </div>
+              <div class="music hidden-xs hidden-sm ">
+                <div class="music-bg" id="music-img">
+                    <img src="/static/assets/img/music.jpg" alt="">
+                </div>
+                <audio id="bgMusic" src="https://music.163.com/song/media/outer/url?id=110805"></audio>
+                <span>“音乐是空气的诗歌”</span>
+            </div>
+          </div>
+           <div class="panel-group hidden-sm hidden-md hidden-lg middle" id="accordion " role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" width="100%" style="display: block;" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    分类标签
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body" id="category-list1">
+                
+
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" width="100%" style="display: block;" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                   热门文章
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body" id="hot_posts1">
+                 
+                </div>
               </div>
             </div>
           </div>
           <div class="col-sm-9 col-xs-12">
              <div class="post_detail" id="postdetail">
-              <!--  <div class="post-detail-header">
-                  <h2>文章标题</h2>
-                  <p class="date">2019年3月21 19:22</p>
-                  <p>浏览数：<span class="read">22</span></p>
-               </div>
-               <div class="post-detail-content">
-             
-               </div> -->
              </div>
              <div class="post-commets-list" >
                <h4>评论列表</h4>
                <div id="post_C"></div>
-             <!--   <div class="comments">
-                 <p class="date">2019年3月21日 20:25</p>
-                 <p class="nickname">昵称</p><br>
-                 <h5>评论内容士大夫撒旦发放时士大夫撒水电费</h5>
-               </div>
-                <div class="comments">
-                 <p class="date">2019年3月21日 20:25</p>
-                 <p class="nickname">昵称</p><br>
-                 <h5>评论内容士大夫撒旦发放时士大夫撒水电费</h5>
-               </div>
-                <div class="comments">
-                 <p class="date">2019年3月21日 20:25</p>
-                 <p class="nickname">昵称</p><br>
-                 <h5>评论内容士大夫撒旦发放时士大夫撒水电费</h5>
-               </div> -->
-
-
              </div>
               <div class="post-comments">
                 <form class="form-horizontal">
@@ -157,7 +135,7 @@
                 </a>
                 <a href="https://weibo.com/u/6018878594" class="list-group-item">我的微博</a>
                 <a href="javascript:;" class="list-group-item">QQ邮箱：1272125039@qq.com</a>
-                <a href="https://www.cnblogs.com/Yaucheun/" class="list-group-item">我的博客园</a>
+                <a href="https://blog.csdn.net/YauCheun" class="list-group-item">我的CSDN</a>
               
               </div>
             </div>
@@ -169,15 +147,26 @@
         <div class="row">
           <div class="col-xs-12">
             <p style="text-align: center;">©2019 由 <span><a href="https://weibo.com/u/6018878594">YauCheung</a></span> 版权所有</p>
+              <p style="text-align: center;"><a href="http://www.miitbeian.gov.cn
+">湘ICP备19007566号</a></p>
           </div>
         </div>
       </div>
     </div>
+     <div id="goToTop"><a href="javascript:;"><img src="/static/assets/img/top.jpg" width="30" height="30" alt=""></a></div>
   </div>
    <script id="category_tmpl" type="text/x-jsrender">
     {{for commens}}
        <a class="list-group-item" href="/article/category/category.html?id={{: id}}">
-                  <span class="badge">{{: count}}</span>
+                  <span class="badge">({{: count}})</span>
+                {{: name}}
+                </a>
+    {{/for}}
+  </script>
+     <script id="category_tmpl1" type="text/x-jsrender">
+    {{for commens}}
+       <a class="list-group-item" href="/article/category/category.html?id={{: id}}">
+                  <span class="badge">({{: count}})</span>
                 {{: name}}
                 </a>
     {{/for}}
@@ -187,7 +176,17 @@
         <div class="list-group">
                 <a href="/article/detail/post-detail.html?id={{: id}}" class="list-group-item ">
                   <h4 class="list-group-item-heading">{{: title}}</h4>
-                  <p class="list-group-item-text">阅读数：<span>{{: views}}</span></p>
+                  <p class="list-group-item-text">view：<span>{{: views}}</span></p>
+                </a>
+              </div>
+    {{/for}}
+  </script>
+    <script id="hot_posts_tmpl1" type="text/x-jsrender">
+    {{for commens}}
+        <div class="list-group">
+                <a href="/article/detail/post-detail.html?id={{: id}}" class="list-group-item ">
+                  <h4 class="list-group-item-heading">{{: title}}</h4>
+                  <p class="list-group-item-text">view：<span>{{: views}}</span></p>
                 </a>
               </div>
     {{/for}}
@@ -196,8 +195,8 @@
      {{for commens}}
         <div class="post-detail-header">
                   <h2>{{: title}}</h2>
-                  <p class="date">{{: created}}</p>
-                  <p>浏览数：<span class="read">{{: views}}</span></p>
+                  <p class="date"><i></i> &nbsp; {{updateDate:created}}</p>
+                  <p> <i></i> &nbsp;view :&nbsp; <span class="read">{{: views}}</span></p>
                </div>
                <div class="post-detail-content">
                 {{: content}}
@@ -208,8 +207,8 @@
      {{for commens}}
         </div>
                 <div class="comments">
-                 <p class="date">{{: created}}</p>
-                 <p class="nickname">作者： {{: author}}</p><br>
+                 <p class="date">{{updateDate:created}}</p>
+                 <p class="nickname">作者：<span class="author">{{: author}}</span> </p><br>
                  <h5>{{: content}}</h5>
                </div>
     {{/for}}
@@ -217,73 +216,7 @@
   <script src="/static/assets/vendors/jquery/jquery.js"></script>
     <script src="/static/assets/vendors/jsrender/jsrender.js"></script>
   <script src="/static/assets/vendors/bootstrap/js/bootstrap.js"></script>
-  <script>
-     var loc = location.href;
-      var n1 = loc.length;//地址的总长度
-      var n2 = loc.indexOf("=");//取得=号的位置
-      var id = decodeURI(loc.substr(n2+1, n1-n2));//从=号后面的内容
-    $(function($){
-     $(document).ajaxStart(function() {
-      NProgress.start();
-    }).ajaxStop(function() {
-      NProgress.done();
-    });
-    
-
-      $.get('/admin/api/category.php', function(data) {
-        var html=$('#category_tmpl').render({commens: data.category});
-        $('#category-list').html(html);
-          var html=$('#hot_posts_tmpl').render({commens: data.hot_post});
-        $('#hot_posts').html(html);
-
-        $.get('/admin/api/post-detail.php',{id:id},function(res) {
-         var html=$('#posts_detail').render({commens: res.post_word});
-         $('#postdetail').html(html);
-         var html=$('#post_comments').render({commens: res.post_comments});
-         $('#post_C').html(html);
-      });
-         
-      });
-
-      $('#submit').on('click',function(){
-          var nickname=$('#nickname').val();
-          var content=$('#content').val();
-          var d = new Date();
-          var vYear = d.getFullYear()
-          var vMon = d.getMonth() + 1
-          var vDay = d.getDate();
-          var h = d.getHours(); 
-          var m = d.getMinutes(); 
-          var se = d.getSeconds(); 
-          currenttime=vYear + "-" +(vMon<10 ? "0" + vMon : vMon) + "-" +(vDay<10 ? "0"+ vDay : vDay)+" "+(h<10 ? "0"+ h : h) + ":"+(m<10 ? "0" + m : m) + ":"+(se<10 ? "0" +se : se);
-          if (!nickname) {
-            alert('请完整填写内容');
-          }else if (!content) {
-             alert('请完整填写内容');
-          }else {
-               $.post('/admin/api/post-comment.php',{id:id,nickname:nickname,content:content,time:currenttime}, function(data) {
-           if (data>0) {
-             alert('评论成功,需管理员审核');
-             $.get('/admin/api/post-detail.php',{id:id},function(res) {
-               var html=$('#post_comments').render({commens: res.post_comments});
-               $('#post_C').html(html);
-      });
-           }else {
-              alert('评论失败');
-           }
-          });
-          }
-       
-
-
-      });
-     
-     
-
-
-    })
-
-
-  </script>
+   <script src="/static/assets/js/postDetail.js"></script>
+   <script src="/static/assets/js/music.js"></script>
 </body>
 </html>
