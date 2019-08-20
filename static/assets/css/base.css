@@ -99,7 +99,9 @@ a {
 	color: #727272;
 	display: inline-block;
 }
-.main h3 {
+.main .category h3,
+.main .post h3,
+.main .other h3 {
 	font-weight: 500;
 	font-size: 18px;
 	border-left: 5px solid #ffca7e;

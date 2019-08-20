@@ -24,19 +24,22 @@
 .main .post-list .content{
 	width: 100%;
 }
-.main .post-list .content{
-	text-align: left;
+.main .post-list .content {
 	width: 100%;
-	font-size: 14px;
-	word-wrap: break-word;
-	color: #999;
+	font-size: 16px;
+	color: #727272;
 	letter-spacing:0.8px;
-	line-height: 20px;
-    overflow: hidden;
-     text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient:vertical;
-    -webkit-line-clamp:2;
+	line-height: 26px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+@media (max-width: 768px){
+	.main .post-list .content{
+		display: none;
+	}
 }
 .main .post-list .flex{
 	text-align: center;
