@@ -155,3 +155,19 @@
 	margin-top: 20px;
 	width: 100%;
 }
+.post-detail-content{
+	overflow: hidden;
+	word-wrap:break-word;
+}
+.post-detail-content img{
+	width: 80%!important;
+}
+.post-detail-content table{
+	width: 100%!important;
+}
+.post-detail-content ul{
+	width: 100%!important;
+}
+.post-detail-content a{
+	width: 80%!important;
+}
