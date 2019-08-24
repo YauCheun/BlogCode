@@ -5,23 +5,23 @@
       NProgress.done();
     });
           //设置任意标签中的任意文本内容
-    function setInnerText(element,text){
-        if(typeof element.innerText=="undefined"){
-            element.textContent=text;
-        }else {
-            element.innerText=text;
-        }
-    }
+    // function setInnerText(element,text){
+    //     if(typeof element.innerText=="undefined"){
+    //         element.textContent=text;
+    //     }else {
+    //         element.innerText=text;
+    //     }
+    // }
 
 
     //获取任意标签中的文本内容
-    function getInnerText(element) {
-        if(typeof element.innerText=="undefined"){
-            return element.textContent;
-        }else {
-            return element.innerText;
-        }
-    }
+    // function getInnerText(element) {
+    //     if(typeof element.innerText=="undefined"){
+    //         return element.textContent;
+    //     }else {
+    //         return element.innerText;
+    //     }
+    // }
       $.get('/admin/api/category.php', function(data) {
         var html=$('#category_tmpl').render({commens: data.category});
         $('#category-list').html(html);
@@ -38,11 +38,11 @@
         })
         var html=$('#posts_detail_tmpl').render({commens: data.posts_detail});
         $('#posts_detail').html(html);  
-        var contentObjs=$('.content')
-        for(let i=0;i<contentObjs.length;i++){
-          setInnerText(contentObjs[i],getInnerText(contentObjs[i]))
-        }
-      $('.content br').remove();
+        // var contentObjs=$('.content')
+        // for(let i=0;i<contentObjs.length;i++){
+        //   setInnerText(contentObjs[i],getInnerText(contentObjs[i]))
+        // }
+        //   $('.content br').remove();
       });
      
        $('#goToTop').hide();        //隐藏go to top按钮

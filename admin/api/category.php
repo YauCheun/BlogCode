@@ -2,6 +2,7 @@
   
 require_once '../../functions.php';
 
+
 $categories=xiu_fetch_all('select categories.*,
 	count(posts.category_id) as count 
  from categories
@@ -25,7 +26,10 @@ ON t1.post_id = posts.id
 where status='published'
 order by posts.created desc;");
 
-
+for ($i=0; $i < count($posts_detail); $i++) 
+{ 
+ $posts_detail[$i]['content']= mb_substr(strip_tags(trimall($posts_detail[$i]['content'])),0,150,'utf-8');
+}
 
 
 $json=json_encode(array(
@@ -35,9 +39,4 @@ $json=json_encode(array(
   ));
 //设置响应体类型
 header('Content-Type: application/json');
-echo $json;
-
-
-
-
-
+ echo $json;

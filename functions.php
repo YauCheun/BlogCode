@@ -71,3 +71,10 @@ function xiu_execute($sql){
    mysqli_close($conn);
    return $affected_rows;
 }
+
+function trimall($str)//删除空格
+{
+ $search = array(" ","　","\n","\r","\t");
+ $replace = array("","","","","");
+ return str_replace($search, $replace, $str);
+}

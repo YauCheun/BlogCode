@@ -19,6 +19,11 @@ GROUP BY post_id
 ON t1.post_id = posts.id
 where category_id={$id} and status='published'
 order by posts.created desc;");
+for ($i=0; $i < count($posts_category); $i++) 
+{ 
+ $posts_category[$i]['content']= mb_substr(strip_tags(trimall($posts_category[$i]['content'])),0,150,'utf-8');
+}
+
 
 $json=json_encode($posts_category);
 //设置响应体类型
